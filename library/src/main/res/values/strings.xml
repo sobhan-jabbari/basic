@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Framework</string>
+
+    <string name="exit_app">برای خروج، دوباره کلیک کنید</string>
+
+    <string name="ok">تایید</string>
+    <string name="done">انجام</string>
+    <string name="cancel">لغو</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="submit">ثبت</string>
+    <string name="next">بعدی</string>
+    <string name="previous">قبلی</string>
+    <string name="delete">حذف</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+
+</resources>

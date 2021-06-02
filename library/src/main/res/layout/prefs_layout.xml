@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp"
+              tools:ignore="RtlHardcoded">
+
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:id="@android:id/icon"
+    android:layout_width="18dp"
+    android:layout_height="18dp"
+    android:layout_marginTop="12dp"
+    android:alpha="0.9"
+    app:tint="?colorPrimary"/>
+
+  <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_weight="1"
+    android:gravity="right|center_vertical"
+    android:orientation="vertical"
+    android:padding="8dip"
+    >
+
+    <TextView
+      android:id="@android:id/title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ellipsize="marquee"
+      android:fadingEdge="horizontal"
+      android:singleLine="true"
+      android:textColor="?titleTextColor"
+      android:textSize="15sp"/>
+
+    <TextView
+      android:id="@android:id/summary"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:maxLines="4"
+      android:textColor="?subtitleTextColor"
+      android:textSize="13sp"/>
+
+  </LinearLayout>
+
+  <!-- Preference should place its actual preference widget here. -->
+
+  <LinearLayout
+    android:id="@android:id/widget_frame"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:minWidth="48dp"
+    android:orientation="vertical"/>
+
+</LinearLayout>
