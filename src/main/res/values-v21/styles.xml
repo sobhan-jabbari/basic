@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="BaseAppDayNightTheme" parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- <item name="android:windowActivityTransitions">true</item> -->
+    <item name="android:windowContentTransitions">true</item>
+  </style>
+
+  <style name="BaseAppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+    <item name="android:switchStyle">@style/SwitchButtonStyle</item>
+
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- <item name="android:windowActivityTransitions">true</item> -->
+    <item name="android:windowContentTransitions">true</item>
+  </style>
+
+  <style name="BaseAppMaterialTheme" parent="@style/Theme.MaterialComponents.Light.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+    <item name="android:switchStyle">@style/SwitchButtonStyle</item>
+
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- <item name="android:windowActivityTransitions">true</item> -->
+    <item name="android:windowContentTransitions">true</item>
+  </style>
+
+  <style name="BaseAppThemeLight" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+    <item name="android:switchStyle">@style/SwitchButtonStyle</item>
+
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- <item name="android:windowActivityTransitions">true</item> -->
+    <item name="android:windowContentTransitions">true</item>
+  </style>
+
+  <style name="BaseAppMaterialThemeLight" parent="@style/Theme.MaterialComponents.Light.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+    <item name="android:switchStyle">@style/SwitchButtonStyle</item>
+
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- <item name="android:windowActivityTransitions">true</item> -->
+    <item name="android:windowContentTransitions">true</item>
+  </style>
+
+
+  <style name="BaseDarkTheme" parent="@style/Theme.AppCompat">
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogDarkTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogDarkTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance.White</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance.White</item>
+    <item name="editTextStyle">@style/EditTextAppearance.White</item>
+
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- <item name="android:windowActivityTransitions">true</item> -->
+    <item name="android:windowContentTransitions">true</item>
+  </style>
+
+  <style name="BaseDarkMaterialTheme" parent="@style/Theme.MaterialComponents">
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogDarkTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogDarkTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance.White</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance.White</item>
+    <item name="editTextStyle">@style/EditTextAppearance.White</item>
+
+    <item name="android:windowAllowEnterTransitionOverlap">true</item>
+    <item name="android:windowAllowReturnTransitionOverlap">true</item>
+    <item name="android:windowActionBarOverlay">true</item>
+    <!-- <item name="android:windowActivityTransitions">true</item> -->
+    <item name="android:windowContentTransitions">true</item>
+  </style>
+
+</resources>

@@ -1,0 +1,119 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+
+ext {
+    appVersionCode = 1129
+    appVersionName = '1.1.29'
+}
+
+group = 'ir.afraapps'
+version = appVersionName
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 30
+        vectorDrawables.useSupportLibrary = true
+        versionCode appVersionCode
+        versionName appVersionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+
+        debug {
+            minifyEnabled false
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    /*libraryVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (outputFile != null && outputFileName.endsWith('.aar')) {
+                // outputFileName = "${archivesBaseName}-${version}.aar"
+                // outputFileName = "${project.name}-${version}.aar"
+            }
+        }
+    }*/
+
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.4.0-beta01'
+    implementation 'androidx.fragment:fragment:1.3.4'
+    implementation 'androidx.preference:preference:1.1.1'
+}
+
+
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = project.group
+                artifactId = project.name
+                //  version = '1.0'
+
+                pom {
+                    name = 'Basic'
+                    description = 'The basic methods for android'
+                    url = 'https://github.com/sobhan-jabbari/basic'
+                    /*properties = [
+                            myProp: "value",
+                            "prop.with.dots": "anotherValue"
+                    ]*/
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'sobhan-jabbari'
+                            name = 'Ali Jabbari'
+                            email = 'sobhan.jabbari@gmail.com'
+                        }
+                    }
+                    scm {
+                        connection = 'scm:git:github.com/sobhan-jabbari/basic.git'
+                        // developerConnection = 'scm:git:ssh://example.com/my-library.git'
+                        url = 'https://github.com/sobhan-jabbari/basic'
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// apply from: 'publish.gradle'
+
+// ./gradlew :basic:clean :basic:build :basic:bintrayUpload

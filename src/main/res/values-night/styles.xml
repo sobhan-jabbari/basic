@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="BaseAppTheme" parent="@style/Theme.AppCompat">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+  </style>
+
+  <style name="BaseAppMaterialTheme" parent="@style/Theme.MaterialComponents.Light.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+  </style>
+
+</resources>

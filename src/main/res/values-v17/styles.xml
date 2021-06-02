@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="PreferenceStyle" parent="@style/PreferenceThemeOverlay">
+    <item name="preferenceFragmentCompatStyle">@style/PrefsFragment</item>
+    <item name="preferenceFragmentStyle">@style/PrefsFragment</item>
+    <item name="preferenceScreenStyle">@style/Prefs.PreferenceScreen</item>
+    <item name="preferenceCategoryStyle">@style/Prefs.Category</item>
+    <item name="preferenceStyle">@style/Prefs</item>
+    <item name="dialogPreferenceStyle">@style/Prefs.DialogPreference</item>
+    <item name="editTextPreferenceStyle">@style/Prefs.DialogPreference.EditTextPreference</item>
+    <item name="switchPreferenceCompatStyle">@style/Prefs.SwitchPreferenceCompat</item>
+    <item name="switchPreferenceStyle">@style/Prefs.SwitchPreference</item>
+    <item name="checkBoxPreferenceStyle">@style/Prefs.CheckBoxPreferenceCompat</item>
+  </style>
+</resources>

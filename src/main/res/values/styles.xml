@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="BaseAppDayNightTheme" parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+  </style>
+
+  <style name="BaseAppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+  </style>
+
+
+  <style name="BaseAppMaterialTheme" parent="@style/Theme.MaterialComponents.Light.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+  </style>
+
+
+  <style name="BaseAppThemeLight" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+  </style>
+
+  <style name="BaseAppMaterialThemeLight" parent="@style/Theme.MaterialComponents.Light.DarkActionBar">
+    <item name="android:colorBackground">@color/background</item>
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+    <item name="switchStyle">@style/SwitchButtonStyle</item>
+  </style>
+
+
+  <style name="BaseDarkTheme" parent="@style/Theme.AppCompat">
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogDarkTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogDarkTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+  </style>
+
+  <style name="BaseDarkMaterialTheme" parent="@style/Theme.MaterialComponents">
+    <item name="preferenceTheme">@style/PreferenceStyle</item>
+    <item name="android:alertDialogTheme">@style/AlertDialogDarkTheme</item>
+    <item name="alertDialogTheme">@style/AlertDialogDarkTheme</item>
+    <item name="android:textViewStyle">@style/TextViewAppearance</item>
+    <item name="android:editTextStyle">@style/EditTextAppearance</item>
+    <item name="editTextStyle">@style/EditTextAppearance</item>
+  </style>
+
+
+  <!-- Button theme ======================================================================= -->
+
+  <style name="BaseButtonTheme" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+    <item name="android:minWidth">18dp</item>
+    <item name="android:scaleType">centerInside</item>
+  </style>
+
+
+  <!-- TabLayout Style =================================================================== -->
+
+  <style name="BaseTabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabTextAppearance">@style/BaseTabTextAppearance</item>
+  </style>
+
+  <style name="BaseTabTextAppearance" parent="TextAppearance.Design.Tab">
+    <item name="android:textSize">13sp</item>
+    <item name="android:textColor">?attr/subtitleTextColor</item>
+    <item name="android:fontFamily">@font/sans_fd</item>
+    <item name="fontFamily">@font/sans_fd</item>
+    <item name="android:textStyle">normal</item>
+  </style>
+
+
+  <!-- Dialog Style ====================================================================== -->
+
+  <style name="DialogNoTitle" parent="@style/Theme.AppCompat.Light.Dialog">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:fontFamily">@font/sans_fd</item>
+    <item name="fontFamily">@font/sans_fd</item>
+  </style>
+
+  <style name="DialogNoTitle.WidthMatch">
+    <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+    <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+  </style>
+
+  <style name="DialogWindowTitleStyle" parent="@style/RtlOverlay.DialogWindowTitle.AppCompat">
+    <item name="android:textAppearance">@style/TextViewAppearance.Title</item>
+  </style>
+
+  <style name="DialogWindowTitleStyle.White">
+    <item name="android:textAppearance">@style/TextViewAppearance.Title.White</item>
+  </style>
+
+  <style name="AlertDialogTheme" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+    <item name="android:windowBackground">@drawable/bg_dialog</item>
+    <item name="android:windowTitleStyle">@style/DialogWindowTitleStyle</item>
+    <item name="android:textColorAlertDialogListItem">?titleTextColor</item>
+    <item name="textColorAlertDialogListItem">?titleTextColor</item>
+    <item name="positiveButtonText">@string/ok</item>
+    <item name="negativeButtonText">@string/cancel</item>
+    <item name="android:fontFamily">@font/sans_fd</item>
+    <item name="fontFamily">@font/sans_fd</item>
+  </style>
+
+
+  <style name="AlertDialogDarkTheme" parent="@style/Theme.AppCompat.Dialog.Alert">
+    <item name="android:windowTitleStyle">@style/DialogWindowTitleStyle.White</item>
+    <item name="positiveButtonText">@string/done</item>
+    <item name="negativeButtonText">@string/cancel</item>
+    <item name="android:fontFamily">@font/sans_fd</item>
+    <item name="fontFamily">@font/sans_fd</item>
+  </style>
+
+
+  <!-- ProgressBar Style ================================================================= -->
+
+  <style name="ProgressBarHorizontal" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+    <item name="android:minHeight">2dip</item>
+    <item name="android:maxHeight">2dip</item>
+  </style>
+
+  <style name="Widget.MaterialProgressBar.ProgressBar.Horizontal" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
+    <!--
+    Disabled for correct behavior on Android 4.x, see
+    https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+    <item name="android:progressDrawable">@null</item>
+    -->
+    <!--<item name="android:indeterminateDrawable">@null</item>-->
+    <item name="android:minHeight">2dp</item>
+    <item name="android:maxHeight">2dp</item>
+  </style>
+
+
+  <style name="CollapsingToolbarCollapsedAppearance" parent="@style/TextViewAppearance">
+    <item name="android:textColor">?android:attr/colorForegroundInverse</item>
+  </style>
+
+
+  <style name="CollapsingToolbarExpandedAppearance" parent="@style/TextViewAppearance">
+    <item name="android:textColor">?android:attr/colorForegroundInverse</item>
+    <item name="android:textSize">20sp</item>
+  </style>
+
+
+  <!-- Switch Style ======================================================================= -->
+
+  <style name="SwitchButtonStyle" parent="Widget.AppCompat.CompoundButton.Switch">
+    <item name="android:fontFamily">@font/sans_fd</item>
+    <item name="fontFamily">@font/sans_fd</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">?attr/subtitleTextColor</item>
+  </style>
+
+
+  <!-- Text Style ======================================================================= -->
+
+  <style name="ToastTheme">
+    <item name="colorControlNormal">#ee454545</item>
+    <item name="android:textAppearance">@style/TextViewAppearance</item>
+  </style>
+
+
+  <!-- Text Style ======================================================================= -->
+
+  <style name="TextViewAppearance" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">15sp</item>
+    <item name="android:fontFamily">@font/sans_fd</item>
+    <item name="fontFamily">@font/sans_fd</item>
+  </style>
+
+
+  <style name="TextViewAppearance.Thin">
+    <item name="android:textStyle">italic</item>
+  </style>
+
+
+  <style name="TextViewAppearance.Bold">
+    <item name="android:textStyle">bold</item>
+  </style>
+
+
+  <style name="TextViewAppearance.Title">
+    <item name="android:textSize">17sp</item>
+    <item name="android:textColor">?attr/titleTextColor</item>
+  </style>
+
+
+  <style name="TextViewAppearance.White">
+    <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+  </style>
+
+
+  <style name="TextViewAppearance.Small">
+    <item name="android:textSize">12sp</item>
+  </style>
+
+
+  <style name="TextViewAppearance.White.Bold">
+    <item name="android:textStyle">bold</item>
+  </style>
+
+
+  <style name="TextViewAppearance.Title.White">
+    <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+  </style>
+
+
+  <style name="TextViewAppearance.Title.Bold">
+    <item name="android:textStyle">bold</item>
+  </style>
+
+
+  <style name="TextViewAppearance.Title.Bold.White">
+    <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+  </style>
+
+
+  <style name="TextViewAppearance.Subtitle">
+    <item name="android:textSize">13sp</item>
+    <item name="android:textColor">?attr/subtitleTextColor</item>
+  </style>
+
+
+  <style name="TextViewAppearance.Caption">
+    <item name="android:textSize">18sp</item>
+  </style>
+
+
+  <style name="TextInputLayoutAppearance" parent="@style/TextViewAppearance">
+
+  </style>
+
+  <style name="TextInputLayoutAppearance.error">
+    <item name="android:textColor">?attr/colorError</item>
+    <item name="android:textSize">13sp</item>
+  </style>
+
+
+  <style name="TextInputLayoutAppearance.hint">
+    <item name="android:textColor">?android:attr/textColorHint</item>
+  </style>
+
+
+  <style name="EditTextAppearance" parent="Widget.AppCompat.EditText">
+    <item name="android:textAppearance">@style/TextViewAppearance</item>
+  </style>
+
+  <style name="EditTextAppearance.White">
+    <item name="android:textAppearance">@style/TextViewAppearance.White</item>
+    <item name="colorAccent">?android:attr/colorForegroundInverse</item>
+    <item name="colorControlNormal">?android:attr/colorForegroundInverse</item>
+  </style>
+
+
+  <!-- preference Style ================================================================== -->
+
+  <style name="Prefs">
+    <item name="android:layout">@layout/prefs_layout</item>
+    <item name="iconSpaceReserved">false</item>
+  </style>
+
+  <style name="Prefs.PreferenceScreen"></style>
+
+  <style name="Prefs.Category">
+    <item name="android:layout">@layout/prefs_category_layout</item>
+    <item name="android:shouldDisableView">false</item>
+    <item name="android:selectable">false</item>
+  </style>
+
+  <style name="Prefs.DialogPreference">
+    <item name="android:positiveButtonText">@string/done</item>
+    <item name="android:negativeButtonText">@string/cancel</item>
+  </style>
+
+  <style name="Prefs.DialogPreference.EditTextPreference">
+    <item name="android:dialogLayout">@layout/prefs_dialog_edittext</item>
+  </style>
+
+  <style name="Prefs.SwitchPreferenceCompat">
+    <item name="android:widgetLayout">@layout/prefs_layout_switch_compat</item>
+    <item name="android:switchTextOn">@string/on</item>
+    <item name="android:switchTextOff">@string/off</item>
+  </style>
+
+  <style name="Prefs.SwitchPreference">
+    <item name="android:widgetLayout">@layout/prefs_layout_switch</item>
+    <item name="android:switchTextOn">@string/on</item>
+    <item name="android:switchTextOff">@string/off</item>
+  </style>
+
+  <style name="Prefs.CheckBoxPreferenceCompat">
+    <item name="android:widgetLayout">@layout/prefs_layout_checkbox</item>
+  </style>
+
+  <style name="PrefsFragment" parent="PreferenceFragment.Material">
+    <item name="android:divider">@null</item>
+    <item name="allowDividerAfterLastItem">false</item>
+    <item name="android:layout">@layout/fragment_preference</item>
+  </style>
+
+  <style name="PreferenceStyle" parent="@style/PreferenceThemeOverlay">
+    <item name="preferenceFragmentCompatStyle">@style/PrefsFragment</item>
+    <item name="preferenceFragmentStyle">@style/PrefsFragment</item>
+    <item name="preferenceScreenStyle">@style/Prefs.PreferenceScreen</item>
+    <item name="preferenceCategoryStyle">@style/Prefs.Category</item>
+    <item name="preferenceStyle">@style/Prefs</item>
+    <item name="dialogPreferenceStyle">@style/Prefs.DialogPreference</item>
+    <item name="editTextPreferenceStyle">@style/Prefs.DialogPreference.EditTextPreference</item>
+    <item name="switchPreferenceCompatStyle">@style/Prefs.SwitchPreferenceCompat</item>
+    <item name="switchPreferenceStyle">@style/Prefs.SwitchPreference</item>
+    <item name="checkBoxPreferenceStyle">@style/Prefs.CheckBoxPreferenceCompat</item>
+  </style>
+
+
+</resources>
