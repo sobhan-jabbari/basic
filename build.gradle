@@ -1,11 +1,19 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 plugins {
     id 'com.android.library'
     id 'maven-publish'
 }
 
 ext {
-    appVersionCode = 1129
-    appVersionName = '1.1.29'
+    appVersionCode = 1130
+    appVersionName = '1.1.30'
 }
 
 group = 'ir.afraapps'
